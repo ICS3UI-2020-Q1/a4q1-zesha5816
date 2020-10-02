@@ -1,6 +1,7 @@
+import java.util.Scanner;
 /**
  *
- * @author 
+ * @author Ahmad Zeshan
  */
 public class Main {
 
@@ -9,7 +10,15 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
-    
+    // Create the Scanner
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please enter an integer to count down to");
+		int countNumber = input.nextInt();
+		int count = 100;
+		System.out.println("Count Down:");
+		do {
+			System.out.println(count);
+			count = count - 5; 
+		}while (countNumber <= count);
   }
 }
